@@ -12,11 +12,21 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+.h1-container {
+  width: 100%;
+}
 
 h1 {
   text-align: center;
 }
-
+h1 img {
+  object-fit: contain;
+}
+@media (max-width: 1080px) {
+  h1 img {
+    width: 100%;
+  }
+}
 .container {
   margin: auto;
   padding: 20px;
