@@ -5,8 +5,9 @@
 }
 
 body {
-  background-color: #fba8a4;
-  background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+  background: #C9CCD3;
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: lighten;
 
   font-family: 'Lato', sans-serif;
   min-height: 100vh;
@@ -34,7 +35,7 @@ h1 img {
 
 .btn {
   cursor: pointer;
-  background-color: #ba55d3;
+  background-color: #333;
   border: 0;
   border-radius: 4px;
   color: #fff;
@@ -63,10 +64,10 @@ select:focus {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -800px);
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: all 1s ease-in-out;
 }
 
@@ -75,7 +76,7 @@ select:focus {
 }
 
 .text-box select {
-  background-color: #ba55d3;
+  background-color: #333;
   border: 0;
   color: #fff;
   font-size: 12px;
@@ -110,8 +111,8 @@ main {
 }
 
 .box {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -120,7 +121,7 @@ main {
 }
 
 .box.active {
-  box-shadow: 0 0 10px 5px #df73ff;
+  box-shadow: 0 0 5px 1px #2d3436;
 }
 
 .box img {
@@ -134,15 +135,22 @@ main {
 } */
 
 .box .info {
-  background-color: #c8a2c8;
+ 
+  background-color: #c3cbdc;
+  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+  
   font-weight: bold;
   color: #333;
   font-size: 18px;
   letter-spacing: 1px;
   margin: 0;
   padding: 10px;
-  text-align: center;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.info:hover {
+  color: #000;
 }
 
 @media (max-width: 1100px) {
@@ -164,6 +172,8 @@ main {
 }
 
 /* BUTTON */
+.btn-grad {background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)}
+
 .bubbly-button {
   font-family: 'Helvetica', 'Arial', sans-serif;
   display: inline-block;
@@ -173,14 +183,19 @@ main {
   margin-bottom: 20px;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #ff0081;
+  background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
   color: #fff;
-  border-radius: 8px;
+  border-radius: 50px;
   border: none;
   cursor: pointer;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  box-shadow: 0 2px 10px #232526;
+  width: 100px;
+  height: 100px;
+}
+.microphone {
+  font-size: 40px;
 }
 .bubbly-button:focus {
   outline: 0;
