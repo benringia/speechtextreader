@@ -22,8 +22,9 @@ h1 {
 }
 h1 img {
   object-fit: contain;
+  width: 50%;
 }
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
   h1 img {
     width: 100%;
   }
